@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="child">
+                <h1 class="run">0</h1>
+                <div class="but">
+                    <button class="increment">increment</button>
+                    <button class="decrement">decrement</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var x=0;
+      var run=document.getElementsByClassName("run")[0];
+      var increment=document.getElementsByClassName("increment")[0];
+      var decrement=document.getElementsByClassName("decrement")[0];
+      increment.addEventListener("click",function(){
+         x+=5;
+        run.innerHTML=x;
+      })
+      decrement.addEventListener("click",function(){
+      run.innerHTML=x-=2;
+      
+    
+      
+      })
+
+      let array=[1,2,3,4,9];
+      let sum=0;
+      for(var i=0;i < array.length;i++){
+     var length=console.log(array[i]);//length of the array is 5
+    var element=console.log(sum+=array[i]);//sum of th array is 19
+       
+      }
+     
+
+    </script>
+    
+</html>
+<style>
+    .but{
+        width:300px;
+        height:100px;
+        background-color: blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+    }
+    .run{
+     color:#fff;
+    }
+
+    .increment{
+        width:100px;
+        height:50px;
+        background-color: aqua;
+        cursor: pointer;
+    }
+    .decrement{
+        width:100px;
+        height:50px;
+        background-color: aqua;
+        cursor: pointer;
+    }
+      .main{
+        background-color: aqua;
+        width:100%;
+        height:800px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+      }  
+
+      .child{
+        background-color: black;
+        width:40%;
+        height:350px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+      }
+
+</style>
